@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Function Plotter</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.4.0/math.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-zoom/0.7.7/chartjs-plugin-zoom.min.js"></script>
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+</head>
+<body>
+    <h1>Function Plotter</h1>
+    <form id="functionForm">
+        <input type="text" id="functionInput" placeholder="Enter a function in terms of x">
+        <input type="number" id="xMin" placeholder="x min" value="-10">
+        <input type="number" id="xMax" placeholder="x max" value="10">
+        <input type="number" id="yMin" placeholder="y min" value="-10">
+        <input type="number" id="yMax" placeholder="y max" value="10">
+        <button type="submit">Plot</button>
+        <button type="button" id="clearButton">Clear</button>
+    </form>
+    <div id="keyboard">
+        <button>x</button>
+        <button>^</button>
+        <button>sqrt()</button>
+        <button>sin()</button>
+        <button>cos()</button>
+        <button>tan()</button>
+        <button>log()</button>
+        <button>exp()</button>
+        <button>abs()</button>
+        <button>ceil()</button>
+        <button>floor()</button>
+        <button>round()</button>
+        <button>min()</button>
+        <button>max()</button>
+        <button>pow()</button>
+    </div>
+    <canvas id="myChart"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
